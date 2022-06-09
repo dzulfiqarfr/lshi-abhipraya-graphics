@@ -1,5 +1,5 @@
 dirYear <- "2022"
-dirProject <- "2022-06-07-berkah-ramadan-belum-kembali-ke-retail"
+dirProject <- "2022-06-07-retail-sales"
 
 here::i_am(paste(dirYear, dirProject, "src", "visualize.R", sep = "/"))
 
