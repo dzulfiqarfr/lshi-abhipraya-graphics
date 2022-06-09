@@ -1,7 +1,6 @@
-dirYear <- "2022"
-dirProject <- "2022-06-07-retail-sales"
+pathProject <- "2022/2022-06-07-retail-sales"
 
-here::i_am(paste(dirYear, dirProject, "src", "visualize.R", sep = "/"))
+here::i_am(paste(pathProject, "src", "visualize.R", sep = "/"))
 
 
 # Packages ----
@@ -71,7 +70,7 @@ rsiPalette <- paletteer_d("ggthemes::Tableau_20")
 
 # Plot ----
 
-rsiZscore <- read_csv(here(dirYear, dirProject, "result", "rsi-z-score.csv"))
+rsiZscore <- read_csv(here(pathProject, "result", "rsi-z-score.csv"))
 
 rsiZscorePrep <- rsiZscore |> 
   mutate(
@@ -133,7 +132,7 @@ plotLight <- plotBase +
   )
 
 ggsave(
-  here(dirYear, dirProject, "result", "rsi-z-score-light.svg"),
+  here(pathProject, "result", "rsi-z-score-light.svg"),
   plot = plotLight,
   width = 8,
   height = 4.5,
@@ -187,7 +186,7 @@ plotDark <- plotBase +
   )
 
 ggsave(
-  here(dirYear, dirProject, "result", "rsi-z-score-dark.svg"),
+  here(pathProject, "result", "rsi-z-score-dark.svg"),
   plot = plotDark,
   width = 8,
   height = 4.5,

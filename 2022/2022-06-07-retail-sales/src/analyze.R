@@ -1,7 +1,6 @@
-dirYear <- "2022"
-dirProject <- "2022-06-07-retail-sales"
+pathProject <- "2022/2022-06-07-retail-sales"
 
-here::i_am(paste(dirYear, dirProject, "src", "analyze.R", sep = "/"))
+here::i_am(paste(pathProject, "src", "analyze.R", sep = "/"))
 
 
 # Packages ----
@@ -17,7 +16,7 @@ library(unpivotr)
 # Data ----
 
 rsiRaw <- xlsx_cells(
-  here(dirYear, dirProject, "data", "bi-rsi-2022-05-12.xlsx"),
+  here(pathProject, "data", "bi-rsi-2022-05-12.xlsx"),
   sheets = "Tabel 1"
 )
 
@@ -74,4 +73,4 @@ rsiZscore <- rsiClean |>
   filter(date == as.Date("2022-04-01")) |> 
   select(-year)
 
-write_csv(rsiZscore, here(dirYear, dirProject, "result", "rsi-z-score.csv"))
+write_csv(rsiZscore, here(pathProject, "result", "rsi-z-score.csv"))
