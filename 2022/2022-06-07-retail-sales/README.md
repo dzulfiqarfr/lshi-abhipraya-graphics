@@ -4,8 +4,9 @@ This article seeks to explain that the seasonal increase in demand during Ramada
 
 Read (in Indonesian): [Berkah Ramadan Belum Sepenuhnya Kembali ke Retail](https://lshiabhipraya.com/berkah-ramadan-belum-kembali-sepenuhnya-ke-retail%ef%bf%bc/)
 
+
 ## Data
 
 Data | Source |  
 ---- | ------ |  
-Retail sales index | [Bank Indonesia](https://www.bi.go.id/id/publikasi/laporan/Pages/SPE-Maret-2022.aspx) |  
+[Retail sales index](https://www.bi.go.id/id/publikasi/laporan/Pages/SPE-Maret-2022.aspx) | Bank Indonesia |  
